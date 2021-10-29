@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 URL = 'https://dinosaurpictures.org'
 
-
 def extract_data(content):
     if content.status_code == 200:
         soup = BeautifulSoup(content.text, features="html.parser")
